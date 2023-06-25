@@ -29,9 +29,6 @@
 			<article id="top" class="wrapper style1">
 				<div class="container">
 					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
-						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
 								<h1>Hi. We are <strong>Group-57</strong>.</h1>
@@ -39,10 +36,28 @@
 							<p>And this is our project, <strong>Analyzing the proliferation of fake news: "The Marcos family cleared ALL allegations that were filed against the Marcos family."</strong> Our research aims to analyze how the narrative that the Marcos family won all cases filed against them disseminated on Twitter.</p>
 							<p>Data Science Team</p>
 							<ul style="list-style-type:none; margin-top:-30px;">
-							  <li>Janinalaine Platero, WFU</li>
-							  <li>Miguel Martinez, WFU</li>
-							  <li>Joshua Amador, WFU</li>
 							</ul>
+						</div>
+						<div class="row">
+							<div class="col-4 col-5-large col-12-medium">
+								<span class="image centered">
+									<img class="image centered img"src="images/janinalaine.jpg" alt="" />
+									<p><strong style="text-align: center;">Janinalaine Platero</strong></p>
+									</span>
+
+							</div>
+							<div class="col-4 col-5-large col-12-medium">
+								<span class="image centered">
+									<img class="image centered img"src="images/joshua.jpg" alt="" />
+									<p><strong style="text-align: center;">Joshua Amador</strong></p>
+								</span>
+							</div>
+							<div class="col-4 col-5-large col-12-medium">
+								<span class="image centered">
+									<img class="image centered img"src="images/miguel.jpg" alt="" />
+									<p><strong style="text-align: center;">Miguel Luis Martinez</strong></p>
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -62,7 +77,7 @@
 								<h3>Research Question</h3>
 								<ul>
 									<li>Is there a correlation between the tweets claiming that the Marcos family won all cases filed against the Marcos family, and these tweets mentioning the Aquino family, the Liberal Party, or their supporters?</li>
-									<li>Is there a relationship between the frequency of these tweets and the electoral campaign of Ferdinand Marcos Jr. for the 2022 Presidential Elections?</li>
+									<li>Is there a relationship between the frequency of these tweets and the electoral campaign of Ferdinand "Bongbong" Marcos Jr. for the 2022 Presidential Elections?</li>
 								</ul>
 							</section>
 						</div>
@@ -102,47 +117,51 @@
 				<div class="row">
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2">
-							<a href="#" class="image featured"><img src="marcos_family.jpeg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/marcos_family.jpeg" alt="" /></a>
 							<h3><a href="#">Topic</a></h3>
-							<p>The Marcos family cleared ALL allegations that were filed against the Marcos family.</p>
+							<p>The Marcos family cleared all allegations that were filed against the Marcos family.</p>
 						</article>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2">
-							<a href="#" class="image featured"><img src="keywords.png" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/keywords.png" alt="" /></a>
 							<h3><a href="#">Keywords</a></h3>
-							<p>We used combinations of the following words: marcos, won, all, cases, nanalo, lahat, kaso, imelda, dismiss, case, 900, 906, 935, 986, 996, 1000, 900, charges, not guilty, acquitted, junked, trial, trial of the century, panalo, lost, not, none, wala, ibinasura, ferdinand</p>
+							<p>We used combinations of these words, with one word per column (third and fourth columns were optional):<br>
+								<strong>1: </strong>[Marcos,Imelda,Ferdinand]<br>
+								<strong>2: </strong>[Won, Acquitted, Not Guilty, Dismiss, Junked, Lost, Panalo, Nanalo, Ibinasura]<br>
+								<strong>3: </strong>[All, None, Not, Lahat, Wala]<br>
+								<strong>4: </strong>[Case, Trial, Charges, Filed, Kaso]</p>
 						</article>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2">
-							<a href="#" class="image featured"><img src="python.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/python.jpg" alt="" /></a>
 							<h3><a href="#">Tools</a></h3>
-							<p>We used <strong>snscrape</strong> to scrape tweets and other vital information from twitter.</p>
+							<p>We used <strong>snscrape</strong> to scrape tweets and other vital information from twitter. A script was used to get tweets using each of the 972 key phrases and save unique tweets to a CSV table.</p>
 						</article>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2">
-							<a href="#" class="image featured"><img src="preprocessing.png" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/preprocessing.png" alt="" /></a>
 							<h3><a href="#">Preprocessing</a></h3>
 							<ul>
-								<li>Unique accounts were collected to see metrics regarding the authors of the tweets, one such metric is the date the authors joined twitter relative to significant dates in this case, the election campaign period.</li>
-								<li>Outliers were not removed; instead, they were used to demonstrate that tweets receiving significant amounts of engagement were rare.</li>
+								<li>Unique accounts were collected to see metrics regarding the authors of the tweets, one such metric is the date the authors joined twitter relative to significant dates in this case, thy weree election campaign period.</li>
+								<li>Outliers were not removed; instead, the used to demonstrate that tweets receiving significant amounts of engagement were rare.</li>
 								<li>Tweets were manually translated to english.</li>
-								<li>Emoji and links in tweets were removed.</li>
+								<li>Emoji and links in tweets were removed to facilitate automated analysis.</li>
 							</ul>
 						</article>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2">
-							<a href="#" class="image featured"><img src="statistical.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/statistical.jpg" alt="" /></a>
 							<h3><a href="#">Statistical Test</a></h3>
 							<p>The <strong>chi-square test</strong> is a statistical tool that examines the relationship between categorical variables. We used this in our research to test our hypotheses.</p>
 						</article>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2">
-							<a href="#" class="image featured"><img src="machine-learning.png" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/machine-learning.png" alt="" /></a>
 							<h3><a href="#">Machine Learning Model</a></h3>
 							<p><strong>Latent Dirichlet Allocation</strong>(LDA) is a topic modeling technique that can be used to analyze the context and identify underlying topics of the tweets. We used its results to gain valuable insights on tweets about our topic.</p>
 						</article>
@@ -161,7 +180,7 @@
 						<div>
 							<header>
 								<h2>Date Distribution</h2>
-								<img src="date_distribution.png">
+								<img src="images/date_distribution.png">
 								<p>- 89 tweets were posted by accounts within 12 months from joining Twitter.</p>
 								<p>- 38 accounts were made after Ferdinand Marcos Jr. filed for presidential candidacy.</p>
 							</header>
@@ -203,29 +222,29 @@
 									<td>0.423344</td>
 								</tr>
 							</table>
-							<img src="tweet_engagement.png">
+							<img src="images/tweet_engagement.png">
 							<p>Based on the values presented above, the engagement of all the tweets is fairly low. Most of the values of the engagement parameters are 0.</p>
 						</header>
 						</div>
 					<div>
 						<header>
 							<h2>Immoral Support</h2>
-							<img src="immoral.png">
-							<p>- Tweets that were posted during the Presidential campaign period of Ferdinand Marcos Jr. from his candidacy filing on October 2021  to the election on May 2022.</p>
+							<img src="images/immoral.png">
+							<p>Tweets that were posted during the Presidential campaign period of Ferdinand "Bongbong" Marcos Jr. from his candidacy filing on October 2021 to the election on May 2022. This raises the possibility that a number of these tweets were politically motivated with the goal of raising support for Marcos during his campaign.</p>
 						</header>
 					</div>
 					<div>
 						<header>
 							<h2>The Aquino Connection</h2>
-							<img src="aquino.png">
-							<p>- Tweets that explicitly mention the Cory Aquino administration, the Aquino family, or members of the Liberal Party of the Philippines.</p>
+							<img src="images/aquino.png">
+							<p>Tweets that explicitly mention the Cory Aquino administration, the Aquino family, or members of the Liberal Party of the Philippines and their supporters. The Aquinos and the Liberal Party served as political opponents of Ferdinand Marcos Sr. and Bongbong Marcos respectively.</p>
 						</header>
 					</div>
 					<div>
 						<header>
 							<h2>Historical Revisionism</h2>
-							<img src="historical.png">
-							<p>- Tweets mentioning the Aquinos or Liberal Party that portray them negatively using slurs or with accusations of corruption, plundering the national treasury, and conspiracy with the US government.</p>
+							<img src="images/historical.png">
+							<p>Tweets mentioning the Aquinos or Liberal Party that portray them negatively using slurs or with accusations of corruption, plundering the national treasury, and conspiracy with the US government. These tweets support a narrative where the Marcos family was innocent of the accusations levied against them by a "villainous" Aquino administration.</p>
 						</header>
 					</div>
 					<footer>
@@ -238,7 +257,7 @@
 			<article id="results" class="wrapper style3">
 				<div class="container">
 					<header>
-						<h2>Here's what we found out.</h2>
+						<h2>Here's what we found out from our tests.</h2>
 						<p></p>
 					</header>
 					
@@ -247,7 +266,7 @@
 							<h2>Chi-Square Test</h2>
 							<p>Crit. Val. = 3.841 ; α = 0.05 ; df = 1</p>
 							<br>
-							<table>
+							<table class="table default">
 								<tr>
 								<th></th>
 								<th>Mentions Aquinos/Liberal Party</th>
@@ -265,7 +284,9 @@
 								</tr>
 							</table>
 							<p>Χ-stat: 25.62; p_val: 4.15e-7 -> REJECT</p>
-							<table>
+							<p>The first test revealed a negative correlation for posts claiming the Marcoses won all of their cases and mentions of the Aquino family or the Liberal Party. One possible reason for this is that misinformation tweets aimed at people who are already biased in favor of the Marcos family or are neutral towards them would already have an idea of who the "opposition" is based on other misinformation or propaganda posts. As a result, mentioning a specific enemy such as the Aquino family would be unnecessary unless the goal is to provoke a response from the opposition.</p>
+							<p>DEVELOPER NOTE: ADD AND FORMAT 2 TWEETS: ONE MENTIONING THE AQUINOS NEUTRALLY AND ANOTHER ONE NEGATIVELY</p>
+							<table class="table default">
 								<tr>
 								<th></th>
 								<th>Posted During 2022 BBM Campaign</th>
@@ -283,22 +304,26 @@
 								</tr>
 							</table>
 							<p>Χ-stat: 522.21; p_val: 1.40e-115 -> REJECT</p>
+							<p> The second test revealed a strong positive correlation between the posts claiming the Marcoses won all of their cases and the timing of Ferdinand Marcos Jr.'s presidential campaign in 2022. This implies that the campaign led to a surge in these tweets, mainly by Bongbong Marcos supporters as indicated by the activity of many of the users that posted these tweets, as well as troll accounts as indicated by the high proportion of users that posted these tweets within a year of joining.</p>
 						</header>
+						<p>The </p>
 					</div>
 					
 						
 					<div>
 						<header>
 							<h2>Latent Dirichlet Allocation</h2>
-							<img src="wordcloud.png">
+							<img src="images/wordcloud.png">
+							<iframe src="LDA_Model.html" title="Interactive LDA model"></iframe> 
 						</header>
 					</div>
 					<div>
 						<header>
-							<h2>Conclusion</h2>
+							<h2>Conclusion and Recommendations</h2>
 							<ul>
 								<li>There is enough evidence to suggest a link between Twitter posts claiming that the Marcos family won all cases that were filed against them and an explicit reference to the Aquino family, the Liberal Party or either of their supporters. However, the users were less likely to mention the Aquinos or Liberal Party, rather than more likely as initially predicted.</li>
 								<li>There is also evidence suggesting that the 2022 presidential campaign of Ferdinand Marcos Jr. influenced a spike in tweets spreading this misinformation on Twitter.</li>
+								<li>Further research can explore the relation between misinformation posts on social media related to the Marcos family or the Marcos administration, and the timing of these posts with high-profile events such as elections and the passing of controversial policies.</li>
 							</ul>
 						</header>
 					</div>
@@ -307,7 +332,7 @@
 				</div>
 					<footer>
 						<p>Want to learn more? Take a look at our source codes.</p>
-						<a href="#contact" class="button large scrolly">Github Repo</a>
+						<a href="https://github.com/jbatoast/Group-57" class="button large scrolly">Github Repo</a>
 					</footer>
 				</div>
 				
@@ -317,63 +342,13 @@
 			<article id="team" class="wrapper style4">
 				<div class="container medium">
 					<header>
-						<h2>We'd like to hear from you.</h2>
-						<p>You can add more information about the team members here.</p>
+						<h2>Acknowledgements</h2>
+						<p>The researchers would like to thank Sir Paul Regonia, our advisor, for his valuable insights and support for our project, and VERAFiles for their work on debunking misinformation in the Philippines.</p>
 					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
+					
 					<footer>
 						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; University of the Philippines Diliman. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
 				</div>
