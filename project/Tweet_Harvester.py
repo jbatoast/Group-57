@@ -3,10 +3,9 @@ import pandas as pd
 import datetime
 import pickle
 search_limit = 1000
-
+collector = "Miguel Luis Martinez" #CHANGE THIS TO YOUR NAME
 def extract_tweet(tweet,keywords): #return tweet as a list matching the above format
     group = 'Group 57'
-    collector = 'Martinez, Miguel Luis'
     category = 'MRCS'
     topic = 'The Marcos family won all cases filed against them'
     tweet_type = ''
@@ -57,8 +56,8 @@ def harvest_tweets(urls=[]): #harvest tweets from twitter using the keywords
                 print(f"Tweet {c} found!")
                 c += 1
     else:
-        twitids = [i.split('/')[-1]for i in urls] #extract the tweet id for each tweet
-        for twitid in twitids:
+        for url in urls:
+            twitid = url.split('/')[-1] #extract the tweet id for each tweet
             try:
                 for i,tweet in enumerate(snt.TwitterTweetScraper(twitid).get_items()):
                     tweets.append([f"57-{c}",now] + extract_tweet(tweet,""))
@@ -66,7 +65,7 @@ def harvest_tweets(urls=[]): #harvest tweets from twitter using the keywords
             except:
                     print(f"Error on tweet {c}")
                     tweets.append([f"57-{c}",now] + [\
-                        tweet.url, 'Group 57', 'Martinez, Miguel Luis', 'MRCS', 'The Marcos family won all cases filed against them', '', \
+                        url, 'Group 57', collector, 'MRCS', 'The Marcos family won all cases filed against them', '', \
                         '','','','', \
                         '','','','', \
                         '','','','','', \
@@ -273,7 +272,6 @@ urls=[
 "https://twitter.com/FISLETA/status/1509066090059804681",
 "https://twitter.com/zycjaerx/status/1499358493945458699",
 "https://twitter.com/heyitseverleigh/status/1445363893639921666",
-
 ]
 
 if (input("Enter yes to recover the tweets used in the project, otherwise get all tweets from search.").lower() in ['y','yes']):
