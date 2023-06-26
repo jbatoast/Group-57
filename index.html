@@ -201,36 +201,36 @@
 								<h2>Tweet Engagements</h2>
 								<p>This shows the mean, range and standard deviation of specific parameters of all the tweets including replies and non-replies.</p>
 							
-							<table>
-								<tr>
+							<table class="table default">
+								<tr class="table default tr">
 								<th>Parameter</th>
 								<th>Mean</th>
 								<th>Range</th>
 								<th>Standard Deviation</th>
 								</tr>
-								<tr>
-								<td>Likes</td>
-								<td>0.988235</td>
-								<td>[0,16]</td>
-								<td>2.200022</td>
+								<tr class="table default tr">
+								<td class="table default td">Likes</td>
+								<td class="table default td">0.988235</td>
+								<td class="table default td">[0,16]</td>
+								<td class="table default td">2.200022</td>
 								</tr>
-								<tr>
-									<td>Replies</td>
-									<td>0.705882</td>
-									<td>[0,7]</td>
-									<td>1.144304</td>
+								<tr class="table default tr">
+									<td class="table default td">Replies</td>
+									<td class="table default td">0.705882</td>
+									<td class="table default td">[0,7]</td>
+									<td class="table default td">1.144304</td>
 								</tr>
-								<tr>
-									<td>Retweets</td>
-									<td>0.182353</td>
-									<td>[0,7]</td>
-									<td>0.710642</td>
+								<tr class="table default tr">
+									<td class="table default td">Retweets</td>
+									<td class="table default td">0.182353</td>
+									<td class="table default td">[0,7]</td>
+									<td class="table default td">0.710642</td>
 								</tr>
-								<tr>
-									<td>Quote Tweets</td>
-									<td>0.064706</td>
-									<td>[0,5]</td>
-									<td>0.423344</td>
+								<tr class="table default tr">
+									<td class="table default td">Quote Tweets</td>
+									<td class="table default td">0.064706</td>
+									<td class="table default td">[0,5]</td>
+									<td class="table default td">0.423344</td>
 								</tr>
 							</table>
 							<img src="images/tweet_engagement.png" alt="Image of engagement statistics"/>
@@ -277,64 +277,70 @@
 							<p>Crit. Val. = 3.841 ; α = 0.05 ; df = 1</p>
 							<br>
 							<table class="table default">
-								<tr>
-								<th></th>
-								<th>Mentions Aquinos/Liberal Party</th>
+								<tr class="table default tr">
+								<th>Mentions Aquinos/Liberal Party?</th>
+								<th>Observed</th>
 								<th>Expected</th>
 								</tr>
-								<tr>
-								<td>Yes</td>
-								<td>52</td>
-								<td>85</td>
+								<tr class="table default tr">
+								<td class="table default td">Yes</td>
+								<td class="table default td">52</td>
+								<td class="table default td">85</td>
 								</tr>
-								<tr>
-								<td>No</td>
-								<td>118</td>
-								<td>85</td>
+								<tr class="table default tr">
+									<td class="table default td">No</td>
+									<td class="table default td">118</td>
+									<td class="table default td">85</td>
+								</tr>
+								<tr class="table default tr">
+									<td class="table default td" colspan="3">Χ-stat: 25.62; p_val: 4.15e-7 &#8594; REJECT H<sub>0</sub></td>
 								</tr>
 							</table>
-							<p>Χ-stat: 25.62; p_val: 4.15e-7 -> REJECT</p>
 							<p>The first test revealed a negative correlation for posts claiming the Marcoses won all of their cases and mentions of the Aquino family or the Liberal Party. One possible reason for this is that misinformation tweets aimed at people who are already biased in favor of the Marcos family or are neutral towards them would already have an idea of who the "opposition" is based on other misinformation or propaganda posts. As a result, mentioning a specific enemy such as the Aquino family would be unnecessary unless the goal is to provoke a response from the opposition.</p>
-							<ul>
-								<li>Neutral mention of the Aquinos/LP</li>
-								<li><img src="images/tweet1a.png" alt="image of one of the misinformation tweets" title="As I remember they were actually acquitted from all the cases the Cory Government filed against them. Those cases were originally filed in New York Trial court because Cory did not allow them to come back. Marcos acquitted New York Trial of the Century search for it."></li>
-								<li>Negative mention of the Aquinos and Liberal Party member Leni Robredo</li>
-								<li><img src="images/tweet2a.png" alt="image of one of the misinformation tweets" title="MARCOSES WON THE CASES, THEY STOLE NOTHING, THEY WERE THE ONES STOLEN FROM BY CORY AQUINO AT ABNOY AQUINO, MARCOS IS  NOT GUILTY. MEANWHILE THAT ROBREDO IS GUILTY FOR CHEATING HUGE PAYMENT TO CAQUIOA, WANTS TO DISMISS THE PROTEST, BUT 11 JUDGES RULED AGAINST HER IN FAVOR TO BBM!"></li>
-								<li>Negative mention of the Liberal Party</li>
-								<li><img src="images/tweet3a.png" alt="image of one of the misinformation tweets" title="Isn't it funny how LP keeps on reminiscing martial law to provoke our emotions like a psychopath using emotional blackmail to manipulate their prey yet they don't want to investigate? And the marcos kids are just quiet all this time even though they won the cases against them?"></li>
-								<li>Negative mention of Aquino/LP Supporters</li>
-								<li><img src="images/tweet4a.png" alt="image of one of the misinformation tweets" title="You should watch video and more research about FEM LIKE INTERVIEW  OF IMELDA  BY MEL, GMA 7 BEFORE JUST SEARCHING THE NET SO YOU WON't SUCCUMB TO THE ANTICS OF THE YELLOW-PINKS who are super envious of the Marcoses, they were consumed by the system, There are a lot of videos that can prove that he is innocent and also they won all the 900 cases filed by Cory and guess what, it was all garbage."></li>
-								</ul>
+							<hr class="hr">
+							<p>Neutral mention of the Aquinos/LP</p>
+							<img src="images/tweet1a.png" alt="image of one of the misinformation tweets" title="As I remember they were actually acquitted from all the cases the Cory Government filed against them. Those cases were originally filed in New York Trial court because Cory did not allow them to come back. Marcos acquitted New York Trial of the Century search for it.">
+							<hr class="hr">
+							<p>Negative mention of the Aquinos and Liberal Party member Leni Robredo</p>
+							<img src="images/tweet2a.png" alt="image of one of the misinformation tweets" title="MARCOSES WON THE CASES, THEY STOLE NOTHING, THEY WERE THE ONES STOLEN FROM BY CORY AQUINO AT ABNOY AQUINO, MARCOS IS  NOT GUILTY. MEANWHILE THAT ROBREDO IS GUILTY FOR CHEATING HUGE PAYMENT TO CAQUIOA, WANTS TO DISMISS THE PROTEST, BUT 11 JUDGES RULED AGAINST HER IN FAVOR TO BBM!">
+							<hr class="hr">
+							<p>Negative mention of the Liberal Party</p>
+							<img src="images/tweet3a.png" alt="image of one of the misinformation tweets" title="Isn't it funny how LP keeps on reminiscing martial law to provoke our emotions like a psychopath using emotional blackmail to manipulate their prey yet they don't want to investigate? And the marcos kids are just quiet all this time even though they won the cases against them?">
+							<hr class="hr">
+							<p>Negative mention of Aquino/LP Supporters</p>
+							<img src="images/tweet4a.png" alt="image of one of the misinformation tweets" title="You should watch video and more research about FEM LIKE INTERVIEW  OF IMELDA  BY MEL, GMA 7 BEFORE JUST SEARCHING THE NET SO YOU WON't SUCCUMB TO THE ANTICS OF THE YELLOW-PINKS who are super envious of the Marcoses, they were consumed by the system, There are a lot of videos that can prove that he is innocent and also they won all the 900 cases filed by Cory and guess what, it was all garbage.">
+							<hr class="hr">
 							<table class="table default">
-								<tr>
-								<th></th>
-								<th>Posted During 2022 BBM Campaign</th>
+								<tr class="table default tr">
+								<th>Posted During 2022 BBM Campaign?</th>
+								<th>Observed</th>
 								<th>Expected</th>
 								</tr>
-								<tr>
-								<td>Yes</td>
-								<td>103</td>
-								<td>16</td>
+								<tr class="table default tr">
+								<td class="table default td">Yes</td>
+								<td class="table default td">103</td>
+								<td class="table default td">16</td>
 								</tr>
-								<tr>
-								<td>No</td>
-								<td>67</td>
-								<td>154</td>
+								<tr class="table default tr">
+								<td class="table default td">No</td>
+								<td class="table default td">67</td>
+								<td class="table default td">154</td>
+								</tr>
+								<tr class="table default tr">
+									<td class="table default td" colspan="3">Χ-stat: 522.21; p_val: 1.40e-115 &#8594; REJECT H<sub>0</sub></td>
 								</tr>
 							</table>
-							<p>Χ-stat: 522.21; p_val: 1.40e-115 -> REJECT</p>
 							<p> The second test revealed a strong positive correlation between the posts claiming the Marcoses won all of their cases and the timing of Ferdinand Marcos Jr.'s presidential campaign in 2022. This implies that the campaign led to a surge in these tweets, mainly by Bongbong Marcos supporters as indicated by the activity of many of the users that posted these tweets, as well as troll accounts as indicated by the high proportion of users that posted these tweets within a year of joining.</p>
 						</header>
 					</div>
-					
-						
+					<hr class="hr">
 					<div>
 						<header>
 							<h2>Topic Analysis</h2>
 							<p>The wordmap showing the most prevalent keywords in the tweets is shown below. Unsurprisingly, several search terms such as "Marcos", "won", and "cases" are the most common.</p>
 							<img src="images/wordcloud.png" alt="Image of the wordcloud showing most common terms">
 						</header>
-
+						<hr class="hr">
 						<header>
 							<h2>Latent Dirichlet Allocation</h2>
 							<p>The topics were clustered into 5 groups. The applet shows the most relevant terms found in each group.</p>
@@ -348,22 +354,26 @@
 								transform:scale(0.90);
 								"></iframe> 
 						</header>
-
+						<hr class="hr">
 						<header>
 							<h2>Topic Classification</h2>
 							<p>The five groups (with an example tweet) are as follows:.</p>
-							<ul>
-								<li><strong>1. </strong>The Marcoses were cleared in court of their cases with Imelda Marcos'es victory in the Trial of the Century in New York.</li>
-								<li><img src="images/tweet1b.png" alt="image of one of the misinformation tweets" title="Since the 90s the Marcoses were cleared of all charges in the fraud case in the U.S Court, the Trial Court of the Century, they won there, this Aquino can't accept that, so when he came to the Philippines, ton of cases were filed against the Marcoses accusing them of ill gotten wealth."></li>
-								<li><strong>2. </strong>The Sandiganbayan and Philippine Courts were not able to prove after so many years that the Marcos wealth was ill-gotten or that the Marcoses were theives.</li>
-								<li><img src="images/tweet2b.png" alt="image of one of the misinformation tweets" title="Been over 30 years now & it hasn't been proven there is ill-gotten wealth. Sandiganbayan & Supreme Court have junked all cases against Marcoses. Why were there no incarcerated Marcoses if the allegations were indeed true? Dumb, stupid, jerk. you keep rambling about imagined stolen wealth."></li>
-								<li><strong>3. </strong>The Aquinos still have no proof that the Marcoses stole from the people after so many years, if anything the Aquinos were the real theives who stole the Marcos family's hard-earned wealth.</li>
-								<li><img src="images/tweet3b.png" alt="image of one of the misinformation tweets" title="What did the Marcoses steal? They the Cory Aquino government filed 935 cases against the Marcos not guilty to all of them .... 30 years has passed - not guilty nothing was proven... INSTEAD THE AQUINOS WERE THE ONES WHO STOLE FROM THE MARCOSES !! The Aquinos are the real thieves with evidence!"></li>
-								<li><strong>4. </strong>There is no evidence that the Marcoses are guilty of anything, as shown in the New York trial, and all the accusations against them are baseless conjecture.</li>
-								<li><img src="images/tweet4b.png" alt="image of one of the misinformation tweets" title="Be careful Pang. Have you heard of Cyber Libel? You can't accuse anyone without evidence. Let the courts decide. All these Marcos wealth are unproven without evidence. New York courts acquitted the Marcoses. All allegations against them were fake news by CIA."></li>
-								<li><strong>5. </strong>The courts and the Philippine Commision on Good Governance had no evidence against the Marcoses, so they deserve to have their stolen wealth returned to them.</li>
-								<li><img src="images/tweet5b.png" alt="image of one of the misinformation tweets" title="PCGG Where are the sequestered assets, Jewelries, etc...Marcos cleared all the cases 996 cases here & abroad The Trials of the Century not guilty that Andress Bautista chairman ng PCGG the amount of pilfered assets by PCGG is astonishing according to his wife"></li>
-							</ul>
+							<hr class="hr">
+								<p><strong>1. </strong>The Marcoses were cleared in court of their cases with Imelda Marcos'es victory in the Trial of the Century in New York.</p>
+								<p><img src="images/tweet1b.png" alt="image of one of the misinformation tweets" title="Since the 90s the Marcoses were cleared of all charges in the fraud case in the U.S Court, the Trial Court of the Century, they won there, this Aquino can't accept that, so when he came to the Philippines, ton of cases were filed against the Marcoses accusing them of ill gotten wealth."></p>
+								<hr class="hr">
+								<p><strong>2. </strong>The Sandiganbayan and Philippine Courts were not able to prove after so many years that the Marcos wealth was ill-gotten or that the Marcoses were theives.</p>
+								<p><img src="images/tweet2b.png" alt="image of one of the misinformation tweets" title="Been over 30 years now & it hasn't been proven there is ill-gotten wealth. Sandiganbayan & Supreme Court have junked all cases against Marcoses. Why were there no incarcerated Marcoses if the allegations were indeed true? Dumb, stupid, jerk. you keep rambling about imagined stolen wealth."></p>
+								<hr class="hr">
+								<p><strong>3. </strong>The Aquinos still have no proof that the Marcoses stole from the people after so many years, if anything the Aquinos were the real theives who stole the Marcos family's hard-earned wealth.</p>
+								<p><img src="images/tweet3b.png" alt="image of one of the misinformation tweets" title="What did the Marcoses steal? They the Cory Aquino government filed 935 cases against the Marcos not guilty to all of them .... 30 years has passed - not guilty nothing was proven... INSTEAD THE AQUINOS WERE THE ONES WHO STOLE FROM THE MARCOSES !! The Aquinos are the real thieves with evidence!"></p>
+								<hr class="hr">
+								<p><strong>4. </strong>There is no evidence that the Marcoses are guilty of anything, as shown in the New York trial, and all the accusations against them are baseless conjecture.</p>
+								<p><img src="images/tweet4b.png" alt="image of one of the misinformation tweets" title="Be careful Pang. Have you heard of Cyber Libel? You can't accuse anyone without evidence. Let the courts decide. All these Marcos wealth are unproven without evidence. New York courts acquitted the Marcoses. All allegations against them were fake news by CIA."></p>
+								<hr class="hr">
+								<p><strong>5. </strong>The courts and the Philippine Commision on Good Governance had no evidence against the Marcoses, so they deserve to have their stolen wealth returned to them.</p>
+								<p><img src="images/tweet5b.png" alt="image of one of the misinformation tweets" title="PCGG Where are the sequestered assets, Jewelries, etc...Marcos cleared all the cases 996 cases here & abroad The Trials of the Century not guilty that Andress Bautista chairman ng PCGG the amount of pilfered assets by PCGG is astonishing according to his wife"></p>
+								<hr class="hr">
 						</header>
 						<p>In all of these groups, the common argument is that because the Marcos family, more specifically Imelda Marcos, won so many high-profile cases, they are automatically cleared of all charges. This is a flawed argument, since these victories do not invalidate the multiple lost cases that the Marcoses incurred over the years. From a political perspective, the goal of some of these posts is not just to prove the innocence of the Marcos family, but to also portray their opposition as corrupt and villainous.</p>
 					</div>
@@ -375,6 +385,7 @@
 								<li>There is enough evidence to suggest a link between Twitter posts claiming that the Marcos family won all cases that were filed against them and an explicit reference to the Aquino family, the Liberal Party or either of their supporters. However, the users were less likely to mention the Aquinos or Liberal Party, rather than more likely as initially predicted.</li>
 								<li>There is also evidence suggesting that the 2022 presidential campaign of Ferdinand Marcos Jr. influenced a spike in tweets spreading this misinformation on Twitter.</li>
 								<li>Further research can explore the relation between misinformation posts on social media related to the Marcos family or the Marcos administration, and the timing of these posts with high-profile events such as elections and the passing of controversial policies.</li>
+								<li>We should be critical about posts and claims made on social media and conduct research and validation before even considering sharing these claims with others, even when these claims support our biases and political agendas.</li>
 							</ul>
 						</header>
 					</div>

@@ -1577,22 +1577,32 @@ input, select, textarea {
 
 	table {
 		width: 100%;
+		background-color: white;
+		border: 1px solid black;
 	}
 
 		table.default {
 			width: 100%;
+			background-color: white;
+			border: 1px solid black;
 		}
 
 			table.default tr {
 				border-top: solid 1px #eee;
+				background-color: white;
+				border: 1px solid black;
 			}
 
 				table.default tr:first-child {
 					border-top: 0;
+					background-color: white;
+					border: 1px solid black;
 				}
 
 			table.default td {
 				padding: 0.5em 1em 0.5em 1em;
+				background-color: white;
+				border: 1px solid black;
 			}
 
 			table.default th {
@@ -1600,6 +1610,8 @@ input, select, textarea {
 				padding: 0.5em 1em 0.5em 1em;
 				font-weight: 600;
 				margin: 0 0 1em 0;
+				background-color: white;
+				border: 1px solid black;
 			}
 
 			table.default thead {
