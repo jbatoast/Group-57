@@ -2112,6 +2112,35 @@ input, select, textarea {
 
 /* Articles */
 
+#about {
+		padding: 10em 0 10em 0;
+		text-align: left;
+	}
+
+		#about .image {
+			border-radius: 100%;
+			width: 20em;
+			height: 20em;
+			margin: 0;
+		}
+
+			#about .image img {
+				border-radius: 100%;
+			}
+
+		#about h1 {
+			margin-top: 0.35em;
+		}
+
+		#about p {
+			font-size: 1.5em;
+			line-height: 1.75em;
+		}
+
+			#about p a {
+				color: inherit;
+			}
+
 	body > article {
 		margin-bottom: 0;
 	}
