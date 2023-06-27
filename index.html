@@ -55,6 +55,7 @@
 						<h1>Problem Statement</h1>
 						<p>One of the various forms of disinformation regarding the Marcos family that is being circulated is that the Marcoses won all of the cases that were filed against them, especially those partaining to stolen or ill-gotten wealth. This claim has been proven false by fact-checking organizations and court rulings confirming that several cases ended with the Marcos family being guilty of multiple instances of graft and corruption, and several million dollars worth of assets being repossessed by the government. Despite this, the claim circulated in social media sites such as Facebook and Twitter.</p>
 						<h2>Our research aims to analyze how the narrative that the Marcos family won all cases filed against them disseminated on Twitter.</h2>
+						<p>We believe that the results of this study will help in identifying patterns and trends common to misinformation centered around the Marcos family, especially in the context of historical revisionism with the aim of improving the image of the Marcoses and the administration of Ferdinand Marcos Sr. in the eyes of the Filipino public.</p>
 					</header>
 					<div class="row aln-center">
 						<div class="col-4 col-6-medium col-12-small">
@@ -143,14 +144,14 @@
 						<article class="box style2">
 							<a href="#" class="image featured"><img src="images/statistical.jpg" alt="Image of a graph" /></a>
 							<h3><a href="#">Statistical Test</a></h3>
-							<p>The <strong>chi-square test</strong> is a statistical tool that examines the relationship between categorical variables. We used this in our research to test our hypotheses.</p>
+							<p>The <strong>chi-square test</strong> is a statistical tool that examines the relationship between categorical variables. We used this in our research to test our hypotheses. Each data point was manually labeled on whether it mentioned the Aquinos, Liberal Party, or their supporters, while the date a tweet was posted was used to determine if the tweet was within the election campaign period.</p>
 						</article>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2">
 							<a href="#" class="image featured"><img src="images/machine-learning.png" alt="Image of machine learning" /></a>
 							<h3><a href="#">Machine Learning Model</a></h3>
-							<p><strong>Latent Dirichlet Allocation</strong>(LDA) is a topic modeling technique that can be used to analyze the context and identify underlying topics of the tweets. We used its results to gain valuable insights on tweets about our topic.</p>
+							<p><strong>Latent Dirichlet Allocation</strong>(LDA) is a topic modeling technique that can be used to analyze the context and identify underlying topics of the tweets. We used its results to gain valuable insights on tweets about our topic. The dataset was grouped into 5 topic clusters with an α-value of 0.61 and a β-value of 0.91, as this combination was found to give the most consistent results.</p>
 						</article>
 					</div>
 				</div>
@@ -164,14 +165,38 @@
 		<!-- Data -->
 			<article id="data" class="wrapper style3">
 				<div class="container">
+					<header>
+						<h1>Data Exploration</h1>
+						<h3>A total of <strong>170</strong> tweets were collected during data collection.</h3>
+					</header>
 						<div>
 							<header>
-								<h1>Data Exploration</h1>
-								<h3>A total of <strong>170</strong> tweets were collected during data collection.</h3>
 								<h2>Date Distribution</h2>
 								<img src="images/date_distribution.png" alt="Image of date posted and joined by month"/>
-								<p>- 89 tweets were posted by accounts within 12 months from joining Twitter.</p>
-								<p>- 38 accounts were made after Ferdinand Marcos Jr. filed for presidential candidacy.</p>
+								<p>38 of the accounts that posted this misinformation were made after Ferdinand Marcos Jr. filed for presidential candidacy. It is likely that some of these accounts were made specifically for posting pro-Marcos tweets during the election period.</p>
+							</header>
+						</div>
+						<div>
+							<header>
+								<h2>Tweets Mentioning Aquinos</h2>
+								<iframe src="project/results/mention_aquinolp.html" title="Mentions Aquino or LP" style="
+								border:1px solid black;
+								width:100%;
+								height:900px;
+								-webkit-transform:scale(0.90);
+								-moz-transform:scale(0.90);
+								-o-transform:scale(0.90);
+								transform:scale(0.90);
+								"></iframe> 
+								<p>Out of 52 tweets mentioning the Aquinos, 38 of the accounts that posted this misinformation were made after Ferdinand Marcos Jr. filed for presidential candidacy. It is likely that some of these accounts were made specifically for posting pro-Marcos tweets during the election period.</p>
+							</header>
+						</div>
+						<div>
+							<header>
+								<h2>Age of Accounts from Tweet Date</h2>
+								<p>This shows the number of accounts that posted a misinformation tweet about the Marcos family winning all cases within a certain number of months from joining Twitter.</p>
+								<img src="images/age_accounts.png" alt="Image of months elapsed from account opening to tweet date"/>
+								<p>89 tweets were posted by accounts within 12 months from joining Twitter. 31 tweets were posted by accounts within their first month.This skewed distribution suggests the possibility that some of these accounts are "troll accounts" that were made specifically to post these tweets and other kinds of misinformation.</p>
 							</header>
 						</div>
 						<div>
@@ -288,6 +313,7 @@
 							<p>Negative mention of Aquino/LP Supporters</p>
 							<img src="images/tweet4a.png" alt="image of one of the misinformation tweets" title="You should watch video and more research about FEM LIKE INTERVIEW  OF IMELDA  BY MEL, GMA 7 BEFORE JUST SEARCHING THE NET SO YOU WON't SUCCUMB TO THE ANTICS OF THE YELLOW-PINKS who are super envious of the Marcoses, they were consumed by the system, There are a lot of videos that can prove that he is innocent and also they won all the 900 cases filed by Cory and guess what, it was all garbage.">
 							<hr class="hr">
+							<hr class="hr">
 							<table class="table default">
 								<tr class="table default tr">
 								<th>Posted During 2022 BBM Campaign?</th>
@@ -354,6 +380,7 @@
 								<hr class="hr">
 						</header>
 						<p>In all of these groups, the common argument is that because the Marcos family, more specifically Imelda Marcos, won so many high-profile cases, they are automatically cleared of all charges. This is a flawed argument, since these victories do not invalidate the multiple lost cases that the Marcoses incurred over the years. From a political perspective, the goal of some of these posts is not just to prove the innocence of the Marcos family, but to also portray their opposition as corrupt and villainous.</p>
+						<p>It should be emphaized that these tweets are part of a movement to distort Philippine history through false claims and portray the administration of Ferdinand Marcos Sr. as a "golden age" without the corruption, human rights violations, and criminal charges that have happened and have been repeatedly verified to have happened in reality. While misinformation is not strictly tied to the Marcos administrations and may even be used by opposing parties, it remains a prominent and frequently-used tool to gain favor from the masses. Identifying and immediately addressing these blatant falsehoods, especially when they are promoted by those in positions of power and influence, will be essential to upholding truth and democracy in Philippine society.</p>
 					</div>
 				</div>
 			</article>
@@ -402,10 +429,16 @@
 					</ul>
 					<h4>A US court document extending the judgement of contempt of one of the cases the Marcoses lost but refused to pay for to January 2031. The Marcoses now have to pay over $353 million in late fees.</h4>
 					<ul>
-						<li><a href="https://www.rappler.com/nation/bongbong-marcos-evades-millions-dollars-contempt-judgment-united-states/">Marcos Jr. continues to evade $353-million contempt judgment of US court.</a></li>
-						<li><a href="https://docs.justia.com/cases/federal/district-courts/hawaii/hidce/1:2003cv11111/14746/10745">ORDER GRANTING MOTION FOR EXTENSION OF JUDGMENT ON CONTEMPT, AND EXTENDING JUDGMENT ON CONTEMPT re 10741</a></li>
+						<li><a href="https://www.rappler.com/nation/bongbong-marcos-evades-millions-dollars-contempt-judgment-united-states/"><strong>Rappler - </strong>Marcos Jr. continues to evade $353-million contempt judgment of US court.</a></li>
+						<li><a href="https://docs.justia.com/cases/federal/district-courts/hawaii/hidce/1:2003cv11111/14746/10745"><strong>Hawaii District Court - </strong>Order Granting Motion For Extension Of Judgment On Contempt, And Extending Judgment On Contempt Re 10741</a></li>
 					</ul>
-				</header>
+					<h4>More insights about the relationship between misinformation and the Marcos family</h4>
+					<ul>
+						<li><a href="https://www.pssc.org.ph/after-edsa/"><strong>Philippine Social Science Council - </strong>After EDSA: Historical Revisionism and Other Factors That Led to the Marcoses' Return</a></li>
+						<li><a href="https://www.rappler.com/voices/thought-leaders/analysis-consequences-distorting-marcos-legacy-youtube/"><strong>Rappler - </strong>Consequences of distorting Marcos’ historical legacy on Youtube</a></li>
+						<li><a href="https://www.asiaglobalonline.hku.hk/controlling-narrative-historical-distortion-and-case-philippines"><strong>Asia Global Online - </strong>ontrolling the Narrative: Historical Distortion and the Case of the Philippines</a></li>
+				</ul>
+			</header>
 			</div>
 		</article>
 
@@ -431,7 +464,6 @@
 								<header>
 									<h1>About the Researchers</strong>.</h1>
 								</header>
-								<p>And this is our project, <strong>Analyzing the proliferation of fake news: "The Marcos family cleared ALL allegations that were filed against the Marcos family."</strong> Our research aims to analyze how the narrative that the Marcos family won all cases filed against them disseminated on Twitter.</p>
 							</div>
 							</header>
 					<div class="row">
@@ -462,7 +494,7 @@
 			<div class="container medium">
 				<footer>
 					<ul id="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; 2023. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 			</div>
