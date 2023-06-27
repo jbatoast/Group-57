@@ -22,7 +22,7 @@
 					<li><a href="#data">Data</a></li>
 					<li><a href="#results">Results</a></li>
 					<li><a href="#conclusion">Conclusion</a></li>
-					<li><a href="#acknowledgement">Acknowledgements</a></li>
+					<!-- <li><a href="#acknowledgement">Acknowledgements</a></li> -->
 					<li><a href="#reference">References</a></li>
 					<li><a href="#repository">Repository</a></li>
 					<li><a href="#about">About Us</a></li>
@@ -188,7 +188,7 @@
 								-o-transform:scale(0.90);
 								transform:scale(0.90);
 								"></iframe> 
-								<p>Out of 52 tweets mentioning the Aquinos, 38 of the accounts that posted this misinformation were made after Ferdinand Marcos Jr. filed for presidential candidacy. It is likely that some of these accounts were made specifically for posting pro-Marcos tweets during the election period.</p>
+								<p>Out of 52 tweets mentioning the Aquinos, 27 of them were made within Ferdinand Marcos Jr.'s presidential campaign period. The months with the most tweets mentioning the Aquinos or Liberal Party also fall under this time period, with 6 tweets of this nature being posted on October 2021 and March 2022. The distribution suggests that these mentions become more prevalent during times of political conflict such as elections where supporters can rally against an opposition.</p>
 							</header>
 						</div>
 						<div>
@@ -278,6 +278,10 @@
 						<header>
 							<h2>Chi-Square Test</h2>
 							<p>Crit. Val. = 3.841 ; α = 0.05 ; df = 1</p>
+							<hr class="hr">
+							<h2>First Test - Relation between tweets and mention of Aquinos/Liberal Party</h2>
+							<p>For this test, the null hypothesis assumes that tweets are just as equally likely to mention the Aquinos or Liberal Party as they are to not mention either of them.</p>
+							<p>The expected values are <strong>(170/2)=85</strong> for both categories.</p>
 							<br>
 							<table class="table default">
 								<tr class="table default tr">
@@ -299,7 +303,7 @@
 									<td class="table default td" colspan="3">Χ-stat: 25.62; p_val: 4.15e-7 &#8594; REJECT H<sub>0</sub></td>
 								</tr>
 							</table>
-							<p>The first test revealed a negative correlation for posts claiming the Marcoses won all of their cases and mentions of the Aquino family or the Liberal Party. Since the chi-squared value is greater than the critical value, and the p-value is very small, we can safely reject our null hypothesis that there is no relation between the tweets claiming that the Marcoses won all of their cases and the tweets mentioning the Aquinos, Liberal Party, or their supporters. One possible reason for this is that misinformation tweets aimed at people who are already biased in favor of the Marcos family or are neutral towards them would already have an idea of who the "opposition" is based on other misinformation or propaganda posts. As a result, mentioning a specific enemy such as the Aquino family would be unnecessary unless the goal is to provoke a response from the opposition.</p>
+							<p>The first test revealed a negative correlation for posts claiming the Marcoses won all of their cases and mentions of the Aquino family or the Liberal Party. This result is the opposite of our original prediction, but since the chi-squared value is greater than the critical value, and the p-value is very small, we can safely reject our null hypothesis that there is no relation between the tweets claiming that the Marcoses won all of their cases and the tweets mentioning the Aquinos, Liberal Party, or their supporters. One possible reason for this is that misinformation tweets aimed at people who are already biased in favor of the Marcos family or are neutral towards them would already have an idea of who the "opposition" is based on other misinformation or propaganda posts. As a result, mentioning a specific enemy such as the Aquino family would be unnecessary unless the goal is to provoke a response from the opposition or to convince non-supporters to agree to their theories.</p>
 							<hr class="hr">
 							<p>Neutral mention of the Aquinos/LP</p>
 							<img src="images/tweet1a.png" alt="image of one of the misinformation tweets" title="As I remember they were actually acquitted from all the cases the Cory Government filed against them. Those cases were originally filed in New York Trial court because Cory did not allow them to come back. Marcos acquitted New York Trial of the Century search for it.">
@@ -313,6 +317,9 @@
 							<p>Negative mention of Aquino/LP Supporters</p>
 							<img src="images/tweet4a.png" alt="image of one of the misinformation tweets" title="You should watch video and more research about FEM LIKE INTERVIEW  OF IMELDA  BY MEL, GMA 7 BEFORE JUST SEARCHING THE NET SO YOU WON't SUCCUMB TO THE ANTICS OF THE YELLOW-PINKS who are super envious of the Marcoses, they were consumed by the system, There are a lot of videos that can prove that he is innocent and also they won all the 900 cases filed by Cory and guess what, it was all garbage.">
 							<hr class="hr">
+							<h2>Second Test - Relation between tweets and campaign period</h2>
+							<p>For this test, the null hypothesis assumes that tweets claiming that the Marcoses won all their cases are equally likely to appear regardless of what month or year it is. The expected distributions were taken by multiplying the total number of tweets with the number of months in the interval divided by the total number of months in the observation period of 2016-2022, rounded to the nearest integer.</p>
+							<p>The expected values are thus <strong>(170*8/84)</strong> and <strong>(170*76/84)</strong>, which round to <strong>16</strong> and <strong>154</strong> respectively</p>
 							<hr class="hr">
 							<table class="table default">
 								<tr class="table default tr">
@@ -347,7 +354,7 @@
 						<hr class="hr">
 						<header>
 							<h2>Latent Dirichlet Allocation</h2>
-							<p>The topics were clustered into 5 groups. The applet shows the most relevant terms found in each group.</p>
+							<p>The topics were clustered into 5 groups. The applet shows the most relevant terms found in each group. Larger circles indicate more tweets in the group, while the red and blue bars correspond to the number of mentions of a keyword in the group and in all groups, respectively.</p>
 							<iframe src="project/results/ldavis_prepared_5final-final5.html" title="Interactive LDA model" style="
 								border:1px solid black;
 								width:100%;
@@ -442,19 +449,6 @@
 			</div>
 		</article>
 
-		<!-- Repository -->
-		<article id="repository" class="wrapper style3">
-			<div class="container medium">
-				<header>
-					<h2>Want to learn more? Take a look at our source codes.</h2>
-					<a href="https://github.com/jbatoast/Group-57" class="button large scrolly">Github Repo</a>
-				</header>
-				<hr class="hr">
-			</div>
-		</article>
-
-
-
 		<!-- About -->
 		<article id="top" class="wrapper style1">
 			<div class="container">
@@ -486,6 +480,14 @@
 							</span>
 						</div>
 					</div>
+			</div>
+			<hr class="hr">
+			<div>
+				<header>
+					<h2>Want to learn more? Take a look at our source codes.</h2>
+					<a href="https://github.com/jbatoast/Group-57" class="button large scrolly">Github Repo</a>
+				</header>
+				<hr class="hr">
 			</div>
 		</article>
 
